@@ -1,0 +1,86 @@
+.assignment-section{
+    padding:20px;
+    background-color:#C7C8CC;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.assignment-item{
+    background-color:pink;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    color:black;
+    border-radius: 4px;
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+
+.assignment-item h3{
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: #0056b3;
+}
+
+.assignment-item p{
+    margin: 0 0 5px;
+}
+
+
+
+.assignment-form {
+    margin-top: 20px;
+    background-color: #A9B388;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 50%;
+    margin-left: 340px;
+}
+
+
+.assignment-form input,
+.assignment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px;
+    border: 1px solid #ddd;
+    border-radius:4px;
+}
+
+.assignment-form button{
+    padding:10px 20px;
+    border:none;
+    border-radius:4px;
+    background-color:#007bff;
+    color:#fff;
+    cursor:pointer;
+}
+
+.assignment-form button:hover{
+    background-color: #0056b3;
+}
+
+
+.assignment-form input[type="file"] {
+    width: 80%; 
+    background-color: #fff;
+}
+
+button {
+    margin-left:1px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="date"]{
+    width: 80%;
+}
+
+form h3{
+    color:black;
+    text-align: center;
+
+}
