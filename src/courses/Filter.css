@@ -1,0 +1,27 @@
+/* src/filters/Filter.css */
+.filter-container {
+    flex: 0 0 250px;
+    padding: 16px;
+    margin-right: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-group {
+    margin-bottom: 16px;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  
+  .filter-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
