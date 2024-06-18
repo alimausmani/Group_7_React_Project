@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css'; // Import the CSS file for styling
 import { Link } from 'react-router-dom';
+
+import CoursesFilter from '../courses/CoursesFilter';
 // import image from "../assets/Blue and Yellow Modern Education Logo.png"
 
 const Navbar = () => {
@@ -37,7 +39,7 @@ const Navbar = () => {
       <div className="nav-items">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Courses</Link></li>
+          <li><Link to="/filter">Courses</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Reviews</Link></li>
         </ul>
