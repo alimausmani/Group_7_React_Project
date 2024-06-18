@@ -10,7 +10,7 @@ import Testimonials from './TestimonialsData';
 function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner />
       <CourseCards />
       <Something />

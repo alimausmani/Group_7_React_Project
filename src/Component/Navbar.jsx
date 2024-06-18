@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css'; // Import the CSS file for styling
 import { Link } from 'react-router-dom';
-// import image from "../assets/Blue and Yellow Modern Education Logo.png"
 
 const Navbar = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -32,12 +31,11 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <Link to="/">Logo</Link>
-        {/* <img className='image1' src={image} alt="Logo" /> */}
       </div>
       <div className="nav-items">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Courses</Link></li>
+          <li><Link to="/courses">Courses</Link></li> {/* Updated link */}
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Reviews</Link></li>
         </ul>
@@ -52,7 +50,7 @@ const Navbar = () => {
         <div className="mobile-nav-items">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Courses</Link></li>
+            <li><Link to="/courses">Courses</Link></li> {/* Updated link */}
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Reviews</Link></li>
           </ul>
