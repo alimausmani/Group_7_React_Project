@@ -32,7 +32,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <Link to="/">Logo</Link>
-        {/* <img className='image1' src={image} alt="" /> */}
+        {/* <img className='image1' src={image} alt="Logo" /> */}
       </div>
       <div className="nav-items">
         <ul>
@@ -52,9 +52,9 @@ const Navbar = () => {
         <div className="mobile-nav-items">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/services">Courses</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/contact">Reviews</Link></li>
           </ul>
         </div>
         <div className="mobile-nav-button">

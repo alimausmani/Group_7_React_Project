@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './HeroSection.css';
+import { useEffect } from 'react';
+import './Banner.css';
 
 const HeroSection = () => {
   useEffect(() => {

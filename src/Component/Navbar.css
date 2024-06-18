@@ -1,11 +1,12 @@
-/* Navbar.css */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f8f9fa;
-  padding: 10px 20px; /* Adjusted padding */
-  height: 60px; /* Set a fixed height */
+  padding: 10px 10px;
+  height: 40px;
+  position: relative;
+  bottom: 10px;
 }
 
 .nav-logo {
@@ -76,6 +77,12 @@
   margin: 10px 0;
 }
 
+.mobile-nav-items li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
 .mobile-nav-button {
   margin-top: 20px;
 }
@@ -88,8 +95,22 @@
   border-radius: 5px;
 }
 
+#hamburger-cross {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 @media (max-width: 770px) {
   #hamburger-menu {
     display: block;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-button {
+    display: none;
   }
 }

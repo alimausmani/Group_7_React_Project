@@ -1,60 +1,123 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-  } */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.testimonials {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: black;
+}
+
+.testimonial .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.testimonial .author img {
+  border-radius: 50%;
+}
+
+.testimonial .author div {
+  font-size: 0.9em;
+}
+
+.testimonial a {
+  color: #6a1b9a;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
   .contain {
-    max-width: 1200px;
-    margin: 0 auto;
+      padding: 0 10px;
   }
-  h1 {
-    text-align: center;
-    font-size: 2em;
-  }
-  .testimonials {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+
   .testimonial {
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    flex: 1;
-    min-width: 250px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex: 1 1 45%;
   }
-  .testimonial img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+}
+
+@media (max-width: 992px) {
+  .testimonial {
+      flex: 1 1 100%;
   }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 1.75em;
+  }
+
   .testimonial p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: black;
+      font-size: 0.9em;
   }
-  .testimonial .author {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  .testimonial .author img {
-    border-radius: 50%;
-  }
-  .testimonial .author div {
-    font-size: 0.9em;
-  }
+
   .testimonial a {
-    color: #6a1b9a;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
+      font-size: 0.9em;
   }
-  
+}
+
+@media (max-width: 576px) {
+  body {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  .testimonial {
+      padding: 15px;
+  }
+
+  .testimonial p {
+      font-size: 0.85em;
+  }
+
+  .testimonial a {
+      font-size: 0.85em;
+  }
+}

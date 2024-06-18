@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 /* src/App.css */
 
 /* 
@@ -32,10 +31,10 @@ body{
   margin: 0;
  }
 
-.App {
+/* .App {
   text-align: center;
   padding: 20px;
-}
+} */
 
 /* Main container for filters and courses */
 .main-container {
@@ -98,8 +97,8 @@ body{
   height: 300px;
   width: 100%;
   border: 3px solid #ebe6e6;
-  background-color: whitesmoke;
-  box-shadow: #ccc;
+  /* background-color: whitesmoke; */
+  /* box-shadow: #ccc; */
  
 }
 
@@ -129,4 +128,3 @@ body{
     max-width: calc(100% - 32px);
   }
 }
->>>>>>> 340c10ea3f1ea119efc6eea57779d2e361e96b01
