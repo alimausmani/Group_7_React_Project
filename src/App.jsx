@@ -1,13 +1,13 @@
-import React from 'react'
-import Assignment from  './assignment_section/app.jsx'
+import React from 'react';
+import './App.css';
+import Main from './assignment_section/app';
 
 function App() {
   return (
-    <div>
-    <Assignment/>
-    
+    <div className="App">
+      <Main/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
