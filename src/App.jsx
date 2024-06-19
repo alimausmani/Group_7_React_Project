@@ -1,3 +1,7 @@
+
+import './App.css';
+import About from './About/About';
+import './About/About.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Component/Home';
@@ -15,6 +19,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/courses" element={<CoursesFilter />} /> {/* Route for CoursesFilter */}
+        <Route path= "/About" element = {<About/>} />
       </Routes>
     </Router>
   );
