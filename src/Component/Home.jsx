@@ -1,4 +1,3 @@
-import Navbar from './Navbar';
 import Footer from './Footer';
 import Banner from './Banner';
 import CourseCards from './CourseCard';
@@ -10,7 +9,6 @@ import Testimonials from './TestimonialsData';
 function Home() {
   return (
     <>
-      {/* <Navbar /> */}
       <Banner />
       <CourseCards />
       <Something />

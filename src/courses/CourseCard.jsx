@@ -1,23 +1,4 @@
-// // src/courses/CourseCard.jsx
-// import React from 'react';
-// import './CourseCard.css';
 
-// function CourseCard({ title, description, instructor, image }) {
-//   return (
-//     <div className="course-card">
-//       <img src={image} alt={title} className="course-image" />
-//       <h2>{title}</h2>
-//       <p>{description}</p>
-//       <p><strong>Instructor:</strong> {instructor}</p>
-//     </div>
-//   );
-// }
-
-// export default CourseCard;
-
-
-// src/courses/CourseCard.jsx
-import React from 'react';
 import './CourseCard.css';
 
 function CourseCard({ title, description, instructor, image, language, rating, price }) {
