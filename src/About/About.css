@@ -1,35 +1,35 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-body {
+} */
+/* body {
   width: 100%;
   margin: 0;
   overflow-x: hidden;
-}
-.container {
-  height: 55px;
+} */
+#container2 {
+  height: 70%;
   text-align: left;
   color: rgb(12, 12, 123);
   position: relative;
 }
-.container > h1,
+#container2 > h1,
 p {
   position: relative;
   left: 10px;
 }
-.image {
+#image {
   width: 100%;
   height: 400px;
   filter: brightness(50%);
   position: relative;
   top: 5px;
 }
-.title {
+#title {
   width: 90%;
 }
-.container1 > .title > p {
+#container1 > #title > p {
   color: white;
   position: relative;
   bottom: 150px;
@@ -39,26 +39,30 @@ p {
   font-weight: 500;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.content {
+
+
+
+#content {
   color: black;
   position: relative;
   width: 50%;
   left: 50px;
   top: 20px;
 }
-.content > p {
+#content > p {
   text-align: left;
   position: relative;
   top: 18px;
   font-size: 18px;
+  color: black;
 }
-.content > h1 {
+#content > h1 {
   font-size: 30px;
   color: rgb(12, 12, 123);
   position: relative;
   left: 13px;
 }
-.content > img {
+#content > img {
   height: 250px;
   width: 400px;
   position: relative;
@@ -68,18 +72,18 @@ p {
   box-shadow: 2px 2px 2px 2px rgb(8, 1, 17);
 }
 
-.content2 {
+#content2 {
   color: black;
   position: relative;
   bottom: 100px;
 }
-.mission {
+#mission {
   height: 100px;
   width: 50%;
   font-size: 18px;
   text-align: left;
 }
-.mission > h1 {
+#mission > h1 {
   text-align: center;
   color: rgb(12, 12, 123);
   font-weight: bolder;
@@ -88,7 +92,7 @@ p {
   font-size: 30px;
 }
 
-.mission > img {
+#mission > img {
   height: 250px;
   width: 350px;
   position: relative;
@@ -97,24 +101,24 @@ p {
   border-radius: 25% 10%;
   box-shadow: 2px 2px 2px 2px rgb(8, 1, 17);
 }
-.mission > p {
+#mission > p {
   font-size: 18px;
   position: relative;
   top: 15px;
   left: 60px;
+  color: black;
 }
-.content3 {
+#content3 {
   color: black;
   position: relative;
-  top: 100px;
+  top: 250px;
 }
-.content3 > h1 {
+#content3 > h1 {
   position: relative;
   font-size: 30px;
-  left: 60px;
   color: rgb(12, 12, 123);
 }
-.first {
+#first {
   height: 250px;
   width: 40%;
   text-align: left;
@@ -124,21 +128,31 @@ p {
   border: 1px solid black;
   border-radius: 25% 10%;
   padding: 5px;
+  background-color: white;
   box-shadow: 2px 2px 2px 2px rgb(8, 1, 17);
 }
-.first > img {
+#first > img {
   height: 120px;
   width: 120px;
   position: relative;
   left: 180px;
+  bottom: 5px;
 }
-.first > h2 {
+#first > h2 {
   position: relative;
-  left: 150px;
+  left: 0px;
   padding: 10px;
+  bottom: 13px;
 }
 
-.second {
+#first > p{
+  width: 37vw;
+  color: black;
+  position: relative;
+  bottom: 27px;
+}
+
+#second {
   height: 250px;
   width: 40%;
   text-align: left;
@@ -148,21 +162,29 @@ p {
   border: 1px solid black;
   border-radius: 25% 10%;
   padding: 5px;
+  background-color: white;
   box-shadow: 2px 2px 2px 2px rgb(8, 1, 17);
 }
-.second > img {
+#second > img {
   height: 120px;
   width: 120px;
   text-align: center;
   position: relative;
   left: 190px;
+  bottom: 5px;
 }
-.second > h2 {
+#second > h2 {
   position: relative;
-  left: 110px;
   padding: 10px;
+  bottom: 25px;
 }
-.third {
+
+#second >p{
+  color: black;
+  position: relative;
+  bottom: 32px;
+}
+#third {
   height: 250px;
   width: 40%;
   text-align: left;
@@ -172,10 +194,11 @@ p {
   border: 1px solid black;
   border-radius: 25% 10%;
   padding: 5px;
+  background-color: white;
   box-shadow: 2px 2px 2px 2px rgb(8, 1, 17);
 }
 
-.third > img {
+#third > img {
   height: 140px;
   width: 140px;
   text-align: center;
@@ -183,11 +206,20 @@ p {
   left: 180px;
 }
 
-.third > h2 {
+#third > h2 {
   position: relative;
-  left: 140px;
+  bottom: 27px;
 }
-.forth {
+
+#third > p{
+  width: 37vw;
+  color: black;
+  position: relative;
+  bottom: 28px;
+}
+
+
+#forth {
   height: 250px;
   width: 40%;
   text-align: left;
@@ -197,21 +229,31 @@ p {
   border: 1px solid black;
   border-radius: 25% 10%;
   padding: 5px;
+  background-color: white;
   box-shadow: 2px 2px 2px 2px rgb(8, 1, 17);
 }
-.forth > img {
+#forth > img {
   height: 140px;
   width: 140px;
   text-align: center;
   position: relative;
   left: 170px;
+  bottom: 5px;
 }
-.forth > h2 {
+#forth > h2 {
   position: relative;
-  left: 140px;
+  bottom: 24px;
 }
 
-.team-member {
+#forth > p{
+  color: black;
+  position: relative;
+  bottom: 24px;
+  width: 37vw;;
+}
+
+
+#team-member {
   height: 250px;
   width: 300px;
   text-align: center;
@@ -223,27 +265,30 @@ p {
   top: 60px;
 }
 
-.slick-slide > div {
+#slick-slide > div {
   margin: 0 10px;
 }
-.outer {
+
+
+#outer {
   margin: auto;
   width: 94%;
   height: 100vh;
   position: relative;
-  bottom: 200px;
+  bottom: 100px;
+  color: black;
 }
-.inner {
+#inner {
   margin-top: 20px;
 }
-.team {
+#team {
   background-color: white;
   color: black;
   height: 400px;
   border: 1px solid black;
   border-radius: 1rem;
 }
-.team-image {
+#team-image {
   border-radius: 1rem;
   display: flex;
   justify-content: center;
@@ -251,13 +296,13 @@ p {
   background-color: rgb(12, 12, 123);
   height: 200px;
 }
-.team-image > img {
+#team-image > img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
 }
 
-.team-info {
+#team-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,32 +312,39 @@ p {
   font-weight: bold;
   padding: 35px;
   text-align: center;
+  color: black;
 }
-.outer > h1 {
+#outer > h1 {
   position: relative;
-  left: 15px;
+  left: 45px;
 }
-.team-info > #name {
+#team-info > #name {
   font-weight: 900;
   position: relative;
   top: -20px;
+  color: black;
 }
-.content5 {
+
+#team-info >p{
+  color: black;
+}
+
+#content5 {
   text-align: center;
   height: 100vh;
   position: relative;
-  bottom: 250px;
+  bottom: 100px;
 }
-.content5 > h1 {
+#content5 > h1 {
   font-size: 30px;
 }
-.content5 > p {
+#content5 > p {
   font-size: 30px;
   color: black;
 }
 
-.div1 {
-  height: 350px;
+#div1 {
+  height: 370px;
   width: 350px;
   border-bottom: 1px solid black;
   margin: 50px;
@@ -300,15 +352,17 @@ p {
   box-shadow: 1px 2px 2px 1px gray;
 }
 
-.div1 > img {
+
+
+#div1 > img {
   height: 214px;
   width: 350px;
   border-radius: 5px;
 }
-.div1 > a > p:hover {
+#div1 > a > p:hover {
   color: rgb(12, 12, 123);
 }
-.icon > img {
+#icon > img {
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -317,7 +371,7 @@ p {
   right: 60px;
   box-shadow: 2px 2px 2px 2px gray;
 }
-.icon > span {
+#icon > span {
   position: relative;
   top: -30px;
   bottom: 50px;
@@ -335,51 +389,54 @@ a > p {
   color: black;
 }
 
-.div2 {
-  height: 350px;
+#div2 {
+  height: 370px;
   width: 350px;
   border-bottom: 1px solid black;
   margin: 50px;
   position: relative;
-  bottom: 400px;
+  bottom: 420px;
   left: 400px;
   border-radius: 5px;
   box-shadow: 1px 2px 2px 1px gray;
 }
-.div2 > a > p:hover {
+#div2 > a > p:hover {
   color: rgb(12, 12, 123);
 }
-.div2 > img {
+#div2 > img {
   height: 214px;
   width: 350px;
   border-radius: 5px;
+  position: relative;
 }
-.div2 > p {
+
+
+#div2 > p {
   font-size: 25px;
   padding: 10px;
   color: black;
 }
 
-.div3 {
-  height: 350px;
+#div3 {
+  height: 370px;
   width: 350px;
   border-bottom: 1px solid black;
   margin: 50px;
   position: relative;
-  bottom: 800px;
+  bottom: 840px;
   left: 800px;
   border-radius: 5px;
   box-shadow: 1px 2px 2px 1px gray;
 }
-.div3 > a > p:hover {
+#div3 > a > p:hover {
   color: rgb(12, 12, 123);
 }
-.div3 > img {
+#div3 > img {
   height: 214px;
   width: 350px;
   border-radius: 5px;
 }
-.div3 > p {
+#div3 > p {
   font-size: 25px;
   padding: 10px;
   color: black;
@@ -401,37 +458,37 @@ a > p {
     font-size: 22px;
     position: relative;
   }
-  .content {
+  #content {
     width: 300px;
     position: relative;
     left: 10px;
     top: -50px;
   }
-  .content > h1 {
+  #content > h1 {
     font-size: 18px;
   }
-  .content > p {
+  #content > p {
     font-size: 12px;
   }
-  .content > img {
+  #content > img {
     left: 10px;
     top: 40px;
     height: 150px;
     width: 290px;
   }
-  .content2 {
+#content2 {
     width: 600px;
     right: 40px;
     top: 5px;
   }
-  .mission > h1 {
+  #mission > h1 {
     font-size: 22px;
     left: 70px;
   }
-  .mission > p {
+  #mission > p {
     font-size: 12px;
   }
-  .mission > img {
+  #mission > img {
     position: relative;
     left: 60px;
     top: 50px;
@@ -439,16 +496,16 @@ a > p {
     width: 290px;
   }
 
-  .content3 {
+  #content3 {
     position: relative;
     top: 300px;
   }
-  .content3 > h1 {
+  #content3 > h1 {
     font-size: 22px;
     position: relative;
     left: 130px;
   }
-  .first {
+  #first {
     height: 180px;
     width: 83%;
     position: relative;
@@ -456,490 +513,490 @@ a > p {
     top: 20px;
     font-size: 12px;
   }
-  .first > img {
+  #first > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .first > h2 {
+  #first > h2 {
     left: 80px;
   }
-  .first > p {
+  #first > p {
     text-align: center;
     top: 10px;
     left: 1px;
   }
-  .second {
+  #second {
     height: 180px;
     width: 83%;
     left: 20px;
     top: 40px;
     font-size: 12px;
   }
-  .second > img {
+  #second > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .second > h2 {
+  #second > h2 {
     left: 40px;
     top: 10px;
   }
-  .second > p {
+  #second > p {
     text-align: center;
     top: 10px;
     left: 1px;
   }
-  .third {
+  #third {
     height: 180px;
     width: 83%;
     left: 20px;
     top: 60px;
     font-size: 12px;
   }
-  .third > img {
+  #third > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .third > h2 {
+  #third > h2 {
     position: relative;
     left: 60px;
     top: 20px;
   }
-  .third > p {
+  #third > p {
     text-align: center;
     top: 30px;
     left: 1px;
   }
-  .forth {
+  #forth {
     height: 180px;
     width: 83%;
     left: 20px;
     top: 80px;
     font-size: 12px;
   }
-  .forth > img {
+  #forth > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .forth > h2 {
+  #forth > h2 {
     position: relative;
     left: 50px;
     top: 20px;
   }
-  .forth > p {
+  #forth > p {
     text-align: center;
     top: 30px;
     left: 1px;
   }
-  .outer {
+  #outer {
     top: 400px;
     font-size: 12px;
   }
-  .outer > h1 {
+  #outer > h1 {
     left: 120px;
   }
-  .team {
+  #team {
     height: 330px;
   }
   #name {
     font-size: 18px;
   }
-  .content5 {
+  #content5 {
     top: 230px;
     width: 300px;
   }
-  .content5 > h1 {
+  #content5 > h1 {
     font-size: 22px;
     position: relative;
     left: 30px;
   }
-  .content5 > p {
+  #content5 > p {
     font-size: 15px;
     top: 15px;
     left: 15px;
   }
-  .div1 {
+  #div1 {
     position: relative;
     left: -30px;
     width: 300px;
   }
-  .div1 > img {
+  #div1 > img {
     width: 300px;
   }
-  .div1 > a > p {
+  #div1 > a > p {
     font-size: 18px;
   }
-  .div2 {
+  #div2 {
     position: relative;
     left: -30px;
     width: 300px;
     top: -20px;
   }
-  .div2 > img {
+  #div2 > img {
     width: 300px;
   }
-  .div2 > a > p {
+  #div2 > a > p {
     font-size: 18px;
   }
-  .div3 {
+  #div3 {
     position: relative;
     left: -30px;
     width: 300px;
     top: -40px;
   }
-  .div3 > img {
+  #div3 > img {
     width: 300px;
   }
-  .div3 > a > p {
+  #div3 > a > p {
     font-size: 18px;
   }
-  .icon > img {
+  #icon > img {
     left: -40px;
   }
 }
 
 @media (min-width: 361px) and (max-width: 768px) {
-  .image {
+  #image {
     width: 100%;
     height: 300px;
   }
-  .title {
+  #title {
     position: relative;
     top: 30px;
     right: 40px;
   }
-  #title {
+  #title1 {
     font-size: 25px;
     position: relative;
   }
-  .content {
+  #content {
     width: 730px;
     position: relative;
     left: 5px;
     top: -50px;
   }
-  .content > h1 {
+  #content > h1 {
     font-size: 22px;
   }
-  .content > p {
+  #content > p {
     font-size: 15px;
   }
-  .content > img {
+  #content > img {
     left: 370px;
     top: 40px;
     height: 200px;
     width: 350px;
   }
-  .content2 {
+  #content2 {
     width: 730px;
     height: 300px;
     top: 5px;
   }
-  .mission > h1 {
+  #mission > h1 {
     font-size: 22px;
     left: -110px;
   }
-  .mission > p {
+  #mission > p {
     font-size: 15px;
     left: 15px;
   }
-  .mission > img {
+  #mission > img {
     left: 400px;
     height: 210px;
     width: 330px;
     bottom: 200px;
   }
 
-  .content3 {
+  #content3 {
     top: 30px;
     height: 500px;
   }
-  .content3 > h1 {
+  #content3 > h1 {
     font-size: 22px;
     left: 15px;
   }
-  .first {
+  #first {
     height: 180px;
     width: 45%;
     left: 20px;
     top: 20px;
     font-size: 12px;
   }
-  .first > img {
+  #first > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .first > h2 {
+  #first > h2 {
     left: 80px;
   }
-  .first > p {
+  #first > p {
     text-align: center;
     top: 10px;
     left: 1px;
   }
-  .second {
+  #second {
     height: 180px;
     width: 45%;
     left: 380px;
     top: -175px;
     font-size: 12px;
   }
-  .second > img {
+  #second > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .second > h2 {
+  #second > h2 {
     left: 40px;
     top: 10px;
   }
-  .second > p {
+  #second > p {
     text-align: center;
     top: 10px;
     left: 1px;
   }
-  .third {
+  #third {
     height: 180px;
     width: 45%;
     left: 20px;
     top: -150px;
     font-size: 12px;
   }
-  .third > img {
+  #third > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .third > h2 {
+  #third > h2 {
     left: 60px;
     top: 20px;
   }
-  .third > p {
+  #third > p {
     text-align: center;
     top: 30px;
     left: 1px;
   }
-  .forth {
+  #forth {
     height: 180px;
     width: 45%;
     left: 380px;
     top: -350px;
     font-size: 12px;
   }
-  .forth > img {
+  #forth > img {
     height: 54px;
     width: 54px;
     left: 120px;
   }
-  .forth > h2 {
+  #forth > h2 {
     position: relative;
     left: 50px;
     top: 20px;
   }
-  .forth > p {
+  #forth > p {
     text-align: center;
     top: 30px;
     left: 1px;
   }
-  .outer {
+  #outer {
     top: 50px;
     font-size: 12px;
   }
-  .outer > h1 {
+  #outer > h1 {
     left: -10px;
   }
-  .team {
+  #team {
     height: 355px;
   }
   #name {
     font-size: 18px;
   }
-  .team-info > p {
+  #team-info > p {
     text-align: center;
     bottom: 10px;
   }
-  .content5 {
+  #content5 {
     top: -90px;
     width: 730px;
     height: 900px;
   }
-  .content5 > h1 {
+  #content5 > h1 {
     font-size: 22px;
     position: relative;
     left: -290px;
   }
-  .content5 > p {
+  #content5 > p {
     font-size: 20px;
     top: 22px;
     left: 10px;
   }
-  .div1 {
+  #div1 {
     position: relative;
     left: -30px;
     width: 320px;
   }
-  .div1 > img {
+  #div1 > img {
     width: 320px;
   }
-  .div1 > a > p {
+  #div1 > a > p {
     font-size: 18px;
   }
-  .div2 {
+  #div2 {
     position: relative;
     left: 350px;
     width: 320px;
   }
-  .div2 > img {
+  #div2 > img {
     width: 320px;
   }
-  .div2 > a > p {
+  #div2 > a > p {
     font-size: 18px;
   }
-  .div3 {
+  #div3 {
     position: relative;
     left: -30px;
     width: 320px;
     top: -400px;
   }
-  .div3 > img {
+  #div3 > img {
     width: 320px;
   }
-  .div3 > a > p {
+  #div3 > a > p {
     font-size: 18px;
   }
-  .icon > img {
+  #icon > img {
     left: -40px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .container {
+  #container {
     position: relative;
     right: 20px;
   }
-  .content {
+  #content {
     width: 50%;
     left: 50px;
     top: 20px;
   }
-  .content > p {
+  #content > p {
     text-align: left;
     position: relative;
     top: 18px;
     font-size: 18px;
   }
-  .content > h1 {
+  #content > h1 {
     font-size: 30px;
     color: rgb(12, 12, 123);
     position: relative;
     left: 13px;
   }
-  .content > img {
+  #content > img {
     left: 110%;
   }
 
-  .content2 {
+  #content2 {
     bottom: 110px;
   }
-  .mission {
+  #mission {
     height: 100px;
     width: 50%;
     font-size: 18px;
     text-align: left;
   }
-  .mission > h1 {
+  #mission > h1 {
     right: 120px;
   }
 
-  .mission > img {
+  #mission > img {
     left: 660px;
     bottom: 210px;
   }
-  .content3 {
+  #content3 {
     color: black;
     position: relative;
     top: 100px;
   }
-  .content3 > h1 {
+  #content3 > h1 {
     position: relative;
     font-size: 30px;
     left: 60px;
     color: rgb(12, 12, 123);
   }
-  .first {
+  #first {
     height: 270px;
     left: 60px;
   }
-  .first > img {
+  #first > img {
     left: 150px;
   }
-  .first > h2 {
+  #first > h2 {
     position: relative;
     left: 130px;
     padding: 10px;
   }
 
-  .second {
+  #second {
     height: 270px;
     left: 54%;
     bottom: 230px;
   }
-  .second > img {
+  #second > img {
     left: 150px;
   }
-  .second > h2 {
+  #second > h2 {
     position: relative;
     left: 70px;
     padding: 10px;
   }
-  .third {
+  #third {
     height: 270px;
     left: 60px;
   }
 
-  .third > img {
+  #third > img {
     left: 140px;
   }
 
-  .third > h2 {
+  #third > h2 {
     position: relative;
     bottom: 10px;
     left: 90px;
   }
-  .forth {
+  #forth {
     height: 270px;
     bottom: 440px;
     left: 550px;
   }
-  .forth > img {
+  #forth > img {
     left: 140px;
   }
-  .forth > h2 {
+  #forth > h2 {
     position: relative;
     left: 80px;
     bottom: 10px;
   }
 
-  .outer {
+  #outer {
     margin: auto;
     width: 94%;
     height: 100vh;
     position: relative;
     bottom: 270px;
-    left: 20px;
+    left: 30px;
   }
-  .content5 {
+  #content5 {
     bottom: 350px;
   }
-  .content5 > h1 {
+  #content5 > h1 {
     font-size: 30px;
   }
   
-  .div1 {
+  #div1 {
     height: 350px;
     width: 300px;
     margin: 40px;
@@ -947,32 +1004,33 @@ a > p {
     left: 20px;
   }
 
-  .div1 > img {
+  #div1 > img {
     width: 300px;
   }
-  .icon > img {
+  #icon > img {
     right: 40px;
   }
   a > p {
     font-size: 18px;
   }
 
-  .div2 {
+  #div2 {
     height: 350px;
     width: 300px;
     left: 335px;
   }
-  .div2 > img {
+  #div2 > img {
     width: 300px;
   }
 
-  .div3 {
+  #div3 {
     height: 350px;
     width: 300px;
     left: 660px;
   }
-  .div3 > img {
+  #div3 > img {
     height: 214px;
     width: 300px;
+    
   }
 }
