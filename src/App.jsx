@@ -24,6 +24,7 @@ const App = () => {
         <Route path="/courses" element={<CoursesFilter />} /> {/* Route for CoursesFilter */}
         <Route path= "/About" element = {<About/>} />
       </Routes>
+
       <Footer />
     </Router>
   </>
