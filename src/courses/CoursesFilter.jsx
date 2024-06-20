@@ -1,6 +1,9 @@
 
+<<<<<<< HEAD
 // src/CoursesFilter.jsx
 
+=======
+>>>>>>> a1c76b371bae25c1aa5ae2fcf6c0d393c83b7006
 import { useState } from 'react';
 import './Courses.css';
 import CourseCard from '../courses/CourseCard.jsx';
@@ -56,10 +59,6 @@ function CoursesFilter() {
     setFilteredCourses(filtered);
   };
 
-  const handleEnroll = (courseLink) => {
-    window.open(courseLink, '_blank');
-  };
-
   return (
     <div className="App">
       <div className='slider-box'>
@@ -79,7 +78,6 @@ function CoursesFilter() {
               language={course.language}
               rating={course.rating}
               price={course.price}
-              onEnroll={() => handleEnroll(course.enrollNow)}
             />
           ))}
         </div>
