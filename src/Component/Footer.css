@@ -135,6 +135,7 @@ footer {
 
 .subscribe {
   display: flex;
+  color: white;
 }
 
 input[type=email] {
@@ -143,6 +144,7 @@ input[type=email] {
   border-bottom: 1px solid #fff;
   background-color: transparent;
   font-size: 0.8rem;
+  color: white;
 }
 
 .sub-icon {
