@@ -1,7 +1,7 @@
-
-body{
+body {
   background-color: #fdf6e3;
 }
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -14,6 +14,7 @@ body{
   position: relative;
   left: 2.5vw;
   overflow: hidden;
+  animation: fadeIn 1s ease-in-out; /* Added animation */
 }
 
 .left {
@@ -22,12 +23,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideInLeft 1s ease-in-out; /* Added animation */
 }
 
 .left img {
   width: 80%;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .right {
@@ -36,25 +39,78 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: slideInRight 1s ease-in-out; /* Added animation */
 }
 
 .item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out; /* Added animation */
 }
 
 .icon {
   font-size: 24px;
   margin-right: 10px;
+  animation: fadeIn 2s ease-in-out; /* Added animation */
 }
 
 .headings {
   font-size: 16px;
   font-weight: bold;
+  animation: fadeInUp 1s ease-in-out; /* Added animation */
 }
 
 .description {
   color: #777;
   margin-top: 5px;
+  animation: fadeInUp 1s ease-in-out; /* Added animation */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Animation for Image */
+.left img:hover {
+  transform: scale(1.05);
 }

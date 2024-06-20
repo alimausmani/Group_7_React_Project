@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import  { useState } from 'react';
 import axios from 'axios';
 import './SignUp.css'; 
 import { Link, useNavigate } from 'react-router-dom';
@@ -13,8 +13,6 @@ const SignUp = () => {
       [e.target.name]: e.target.value
     }));
   };
-
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,7 +32,6 @@ const SignUp = () => {
       navigate('/login');
     } catch (error) {
       console.error('Error:', error);
-
     }
   };
 

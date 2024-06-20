@@ -20,14 +20,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation: fadeInUp 1s ease-in-out; /* Initial animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .icon img {
     width: 200px;
     height: 200px;
+    position: relative;
+    left: 10px;
 }
 
-.IMG1{
+.IMG1 {
     height: 150px;
 }
 
@@ -43,18 +47,27 @@ h3 {
     text-align: left;
 }
 
-/* .IMG1{
-    height: 200px;
-} */
 .anchor {
     color: #2d9c72;
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Initial animation */
 }
 
 .anchor:hover {
     text-decoration: underline;
+}
+
+/* Hover Animation */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Animation */
+.card:active {
+    animation: clickEffect 0.5s ease-in-out;
 }
 
 /* Responsive Design */
@@ -70,4 +83,35 @@ h3 {
     }
 }
 
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

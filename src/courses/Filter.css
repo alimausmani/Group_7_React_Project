@@ -1,5 +1,5 @@
-/* src/filters/Filter.css */
 
+/* src/filters/Filter.css */
 .filter-container {
   flex: 0 0 250px;
   padding: 16px;
@@ -10,8 +10,6 @@
   border: 3px solid blueviolet;
   margin-top: 50px;
   margin-left: 30px;
-  /* margin-bottom: 100%; */
-
 
 }
 
@@ -31,3 +29,4 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
