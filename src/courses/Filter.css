@@ -1,0 +1,76 @@
+.filter-container {
+  flex: 0 0 250px;
+  padding: 16px;
+  margin-right: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 30px;
+  bottom: 165vh;
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.filter-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .filter-container {
+      flex: 0 0 200px;
+      left: 20px;
+      bottom: 150vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter-container {
+      flex: 0 0 150px;
+      padding: 12px;
+      margin-right: 12px;
+      left: 10px;
+      bottom: 130vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+      flex: 0 0 100%;
+      padding: 10px;
+      margin-right: 0;
+      margin-bottom: 16px;
+      left: 0;
+      bottom: 0;
+  }
+  .filter-group {
+      margin-bottom: 12px;
+  }
+  .filter-group input {
+      padding: 6px;
+  }
+}
+
+@media (max-width: 576px) {
+  .filter-container {
+      padding: 8px;
+  }
+  .filter-group {
+      margin-bottom: 8px;
+  }
+  .filter-group input {
+      padding: 4px;
+  }
+}
