@@ -1,15 +1,6 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-} */
-/* body {
-  width: 100%;
-  margin: 0;
-  overflow-x: hidden;
-} */
+
 #container2 {
-  height: 70%;
+  height: 60%;
   text-align: left;
   color: rgb(12, 12, 123);
   position: relative;
@@ -144,6 +135,12 @@ p {
   padding: 10px;
   bottom: 13px;
 }
+
+
+#news{
+  height: 50%;
+}
+
 
 #first > p{
   width: 37vw;
