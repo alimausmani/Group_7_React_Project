@@ -83,6 +83,7 @@ function CoursesFilter() {
         <div className="image-container">
           <img src="https://wowtheme7.com/tf/escola/assets/img/about/2.png" alt="Illustration" />
         </div>
+        
         <div className="form-container">
           <h2>Get In Touch</h2>
           <h1>Bringing Your Vision To Life</h1>
