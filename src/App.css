@@ -1,0 +1,130 @@
+
+/* src/App.css */
+
+/* 
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.course-card {
+  flex: 1 1 calc(33.333% - 32px);
+  max-width: calc(33.333% - 32px);
+  box-sizing: border-box;
+} */
+
+
+/* src/App.css */
+
+
+/* src/App.css */
+
+
+body{
+  margin: 0;
+ }
+
+/* .App {
+  text-align: center;
+  padding: 20px;
+} */
+
+/* Main container for filters and courses */
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Space between filter section and courses */
+}
+
+/* Courses container to align cards */
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Space between cards */
+  padding: 16px;
+}
+
+/* Course card styling */
+.course-card {
+  flex: 1 1 calc(33.333% - 32px); /* Allow three cards per row with margin */
+  max-width: calc(33.333% - 32px); /* Max width to align with flex basis */
+  box-sizing: border-box;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  height: 350px; /* Fixed height for uniformity */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+/* Course image styling */
+.course-image {
+  width: 100%;
+  height: 150px; /* Adjusted height for image */
+  object-fit: cover; /* Ensure image covers the area without stretching */
+  border-radius: 5px 5px 0 0;
+}
+
+/* Course text styling */
+.course-card h2 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.course-card p {
+  margin: 8px 0;
+  font-size: 0.9em;
+}
+
+
+
+.slider-box{
+  height: 300px;
+  width: 100%;
+  border: 3px solid #ebe6e6;
+  /* background-color: whitesmoke; */
+  /* box-shadow: #ccc; */
+ 
+}
+
+.slider-image{
+  height: 300px;
+  width: 100%;
+}
+/* 
+.slider-box h1{
+  margin-top: 5%;
+} */
+
+
+
+
+/* Responsive design for different screen sizes */
+@media (max-width: 1200px) {
+  .course-card {
+    flex: 1 1 calc(50% - 32px); /* Two cards per row on smaller screens */
+    max-width: calc(50% - 32px);
+  }
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    flex: 1 1 calc(100% - 32px); /* One card per row on mobile screens */
+    max-width: calc(100% - 32px);
+  }
+}

@@ -1,0 +1,115 @@
+.containers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fdf6e3;
+    flex-wrap: wrap; /* Ensures cards wrap onto the next line on smaller screens */
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Adjust the width to fit three cards in a row */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeInUp 1s ease-in-out; /* Initial animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icon img {
+    width: 200px;
+    height: 200px;
+}
+
+.IMG1 {
+    height: 150px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.peragraph {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.anchor {
+    color: #2d9c72;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out; /* Initial animation */
+}
+
+.anchor:hover {
+    text-decoration: underline;
+}
+
+/* Hover Animation */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Animation */
+.card:active {
+    animation: clickEffect 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); 
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
