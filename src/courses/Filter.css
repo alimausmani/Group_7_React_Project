@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD
-=======
-/* src/filters/Filter.css */
->>>>>>> a1c76b371bae25c1aa5ae2fcf6c0d393c83b7006
 .filter-container {
   flex: 0 0 250px;
   padding: 16px;
@@ -10,7 +6,7 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: 3px solid blueviolet;
+  border: transparent;
   margin-top: 50px;
   margin-left: 30px;
 
@@ -32,8 +28,3 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> a1c76b371bae25c1aa5ae2fcf6c0d393c83b7006

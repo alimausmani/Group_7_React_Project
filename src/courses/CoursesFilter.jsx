@@ -1,9 +1,4 @@
 
-<<<<<<< HEAD
-// src/CoursesFilter.jsx
-
-=======
->>>>>>> a1c76b371bae25c1aa5ae2fcf6c0d393c83b7006
 import { useState } from 'react';
 import './Courses.css';
 import CourseCard from '../courses/CourseCard.jsx';
