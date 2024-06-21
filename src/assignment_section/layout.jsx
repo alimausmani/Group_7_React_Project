@@ -13,7 +13,7 @@ function Layout() {
   return (
     <div className="layout">
       <Sidebar />
-      <div className="main">
+      <div className="mains">
         <TopNav title={title} />
         <div className="content">
           <Routes>
