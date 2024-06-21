@@ -12,8 +12,6 @@ body{
 /* Main container for filters and courses */
 .main-container {
   display: flex;
-  /* justify-items: baseline; */
-  /* margin-bottom: 20%; */
   gap: 16px; /* Space between filter section and courses */
   align-items: flex-start;
 }
@@ -144,12 +142,9 @@ body{
   }
   
   .form-container {
-    /* flex: 2; */
     padding: 30px;
     box-sizing: border-box;
     width: 100%;
-    /* width: 300px; */
-    /* border: 3px solid; */
   }
   
   .form-container h2 {
@@ -175,7 +170,6 @@ body{
     gap: 40px;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    /* border: 3px solid rgb(0, 42, 255); */
   }
   
   .input-group input {
@@ -204,7 +198,6 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    /* width: 600px; */
   }
   
   button:hover {

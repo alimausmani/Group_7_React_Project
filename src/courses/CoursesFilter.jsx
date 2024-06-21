@@ -60,7 +60,7 @@ function CoursesFilter() {
         <img src="https://www.rukmanisoftware.com/public/assets/img/online-training.jpg" alt="Courses Banner" className="slider-image" />
       </div>
       <h1>Available Courses</h1>
-      <div className="main-container" style={{border:'2px solid red'}}>
+      <div className="main-container">
         <div style={{width:'20%'}}><Filter onFilterChange={handleFilterChange} /></div>
         <div className="courses-container" style={{width:'80%',border:'2 px solid green '}}>
           {filteredCourses.map((course, index) => (
@@ -90,7 +90,9 @@ function CoursesFilter() {
           <form>
             <div className="input-group">
               <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your Email" />
+              <input type="text" placeholder="Your Email" />
+
+              {/* <input type="email" placeholder="Your Email" /> */}
             </div>
             <div className="input-group">
               <input type="text" placeholder="Your Phone" />

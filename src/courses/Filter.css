@@ -1,15 +1,14 @@
-
+/* General Styles */
 .filter-container {
-  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   padding: 16px;
-  margin-right: 16px;
+  margin: 50px 16px 16px 30px; /* top right bottom left */
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: transparent;
-  margin-top: 50px;
-  margin-left: 30px;
-
 }
 
 .filter-group {
@@ -22,9 +21,151 @@
   font-weight: bold;
 }
 
-.filter-group input {
+.filter-group input,
+.filter-group select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+/* Category Specific Styles */
+.category-label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.category-container {
+  margin-bottom: 16px;
+}
+
+.category-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-button {
+  flex: 1 1 48%;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 8px; /* Added to ensure proper spacing */
+}
+
+.category-button.active {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+.category-button:hover {
+  background-color: #ddd;
+}
+
+/* Media Queries */
+
+/* For tablets and larger screens */
+@media (max-width: 1024px) {
+  .filter-container {
+    flex: 0 0 100%;
+    margin: 20px 0; /* Adjust margins to center */
+    padding: 16px 10px; /* Adjust padding */
+    box-shadow: none; /* Optional: remove box-shadow for simpler look */
+    border-radius: 0; /* Optional: remove border radius */
+  }
+
+  .filter-group {
+    margin-bottom: 12px;
+  }
+
+  .filter-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    padding: 10px;
+  }
+
+  .category-button {
+    padding: 6px 12px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .filter-container {
+    flex: 0 0 100%;
+    padding: 10px;
+    margin: 10px 0; /* Adjust margins for smaller screens */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box-shadow */
+  }
+
+  .filter-group {
+    margin-bottom: 10px;
+  }
+
+  .filter-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .category-options {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .category-button {
+    width: 100%; /* Full width for smaller screens */
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .filter-container {
+    padding: 8px;
+    margin: 8px 0; /* Narrower margins */
+    width: 100%; /* Full width for small screens */
+    flex: 0 0 auto; /* No fixed width */
+    border-radius: 0; /* No border radius */
+    box-shadow: none; /* No box-shadow */
+  }
+
+  .filter-group {
+    margin-bottom: 8px;
+  }
+
+  .filter-group label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .filter-group input,
+  .filter-group select {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .category-options {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .category-button {
+    width: 100%; /* Full width for smaller screens */
+    padding: 4px;
+    font-size: 12px;
+  }
 }
