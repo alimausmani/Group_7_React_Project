@@ -89,14 +89,14 @@ body{
 /* Responsive design for different screen sizes */
 @media (max-width: 1200px) {
   .course-card {
-    flex: 1 1 calc(50% - 32px); /* Two cards per row on smaller screens */
+    flex: 1 1 calc(50% - 32px);
     max-width: calc(50% - 32px);
   }
 }
 
 @media (max-width: 768px) {
   .course-card {
-    flex: 1 1 calc(100% - 32px); /* One card per row on mobile screens */
+    flex: 1 1 calc(100% - 32px);
     max-width: calc(100% - 32px);
   }
 }
