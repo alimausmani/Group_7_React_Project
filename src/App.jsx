@@ -1,5 +1,6 @@
-
-// import './App.css';
+import React from 'react';
+import './App.css';
+import Main from './assignment_section/app';
 import About from './About/About';
 import './About/About.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,6 +13,7 @@ import Footer from './Component/Footer';
 
 const App = () => {
   return (
+    <>
     <Router>
       <Navbar /> 
       <Routes>
@@ -22,8 +24,10 @@ const App = () => {
         <Route path="/courses" element={<CoursesFilter />} /> {/* Route for CoursesFilter */}
         <Route path= "/About" element = {<About/>} />
       </Routes>
+
       <Footer />
     </Router>
+  </>
   );
 };
 
