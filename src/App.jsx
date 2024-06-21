@@ -1,5 +1,5 @@
 
-import './App.css';
+// import './App.css';
 import About from './About/About';
 import './About/About.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -7,7 +7,8 @@ import Home from './Component/Home';
 import Login from './Login/Login';
 import SignUp from './SignUp/SignUp';
 import CoursesFilter from './courses/CoursesFilter'; 
-import Navbar from './Component/Navbar'; 
+import Navbar from './Component/Navbar';
+import Footer from './Component/Footer'; 
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/courses" element={<CoursesFilter />} /> {/* Route for CoursesFilter */}
         <Route path= "/About" element = {<About/>} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

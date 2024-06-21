@@ -33,9 +33,8 @@ const Footer = () => {
           <div className="link-des">
             <Link to="#" className="footer-links">Home</Link>
             <Link to="#" className="footer-links">About</Link>
-            <Link to="#" className="footer-links">Services</Link>
-            <Link to="#" className="footer-links">Gallery</Link>
-            <Link to="#" className="footer-links">Contact</Link>
+            <Link to="#" className="footer-links">Courses</Link>
+            <Link to="#" className="footer-links">Assignment</Link>
           </div>
         </div>
         <div className="newsletter row">
