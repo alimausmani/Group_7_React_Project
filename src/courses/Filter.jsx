@@ -1,5 +1,5 @@
 // src/filters/Filter.jsx
-import React, { useState, useEffect } from 'react';
+import  { useState } from 'react';
 import './Filter.css';
 
 function Filter({ onFilterChange }) {

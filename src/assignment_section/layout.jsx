@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './sidebar';
 import TopNav from './topNav';
@@ -11,9 +10,9 @@ function Layout() {
   const title = usePageTitle();
 
   return (
-    <div className="layout">
+    <div className="layout" id='/layout'>
       <Sidebar />
-      <div className="main">
+      <div className="mains">
         <TopNav title={title} />
         <div className="content">
           <Routes>

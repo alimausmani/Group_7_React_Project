@@ -29,13 +29,12 @@ function Login() {
 
       const data = response.data;
       console.log(data);
-
       if (!data.success) {
         alert('Enter valid credentials');
       } else {
         alert('Login successful!');
         localStorage.setItem('authToken', data.authToken);
-        navigate('/'); // Redirect to home page
+        navigate('/');
       }
     } catch (error) {
       console.error('Error:', error);

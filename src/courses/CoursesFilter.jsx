@@ -26,7 +26,7 @@ function CoursesFilter() {
   const [filteredCourses, setFilteredCourses] = useState(coursesData);
 
   const handleFilterChange = (filters) => {
-    console.log('Filters:', filters); // Debugging line
+    console.log('Filters:', filters);
 
     let filtered = coursesData;
 
@@ -50,7 +50,7 @@ function CoursesFilter() {
       filtered = filtered.filter(course => course.rating >= filters.rating);
     }
 
-    console.log('Filtered Courses:', filtered); // Debugging line
+    console.log('Filtered Courses:', filtered);
     setFilteredCourses(filtered);
   };
 
