@@ -1,0 +1,110 @@
+/* Container for the entire StriversA2Z accordion */
+.strivers-a2z {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    /* background: #f7f7f7; */
+    background-color: 	#000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    border: 3px solid brown;
+  }
+  
+  /* Styles for each individual accordion item */
+  .strivers-a2z-content-item {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: border 0.3s ease;
+  }
+  
+  .strivers-a2z-content-item.active {
+    border-color: #007bff;
+  }
+  
+  /* Styles for the accordion titles */
+  .strivers-a2z-content-title {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: rgb(253, 242, 242);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .strivers-a2z-content-title h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .strivers-a2z-content-title span {
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Rotate the icon when the accordion is open */
+  .strivers-a2z-content-item.active .strivers-a2z-content-title span {
+    transform: rotate(180deg);
+  }
+  
+  /* Styles for the content body of each accordion item */
+  .strivers-a2z-content-body {
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: none;
+    transition: max-height 0.3s ease;
+  }
+  
+  .strivers-a2z-content-item.active .strivers-a2z-content-body {
+    display: block;
+  }
+  
+  /* Paragraph and list styles within the accordion content */
+  .strivers-a2z-content-body p {
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .strivers-a2z-content-body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .strivers-a2z-content-body ul li {
+    padding: 5px 0;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .strivers-a2z-content-body ul li::before {
+    content: '•';
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Hover and active states for titles */
+  .strivers-a2z-content-title:hover,
+  .strivers-a2z-content-title:focus {
+    background-color: #333;
+    color: black;
+  }
+  
+  /* Transition effects for smoother UI */
+  .strivers-a2z-content-item {
+    transition: all 0.3s ease;
+  }
+  
