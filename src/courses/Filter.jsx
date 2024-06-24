@@ -8,7 +8,7 @@ function Filter({ onFilterChange }) {
   const [instructor, setInstructor] = useState('');
   const [language, setLanguage] = useState('');
   const [rating, setRating] = useState('');
-  
+ 
   const handleFilterChange = () => {
     onFilterChange({
       category,

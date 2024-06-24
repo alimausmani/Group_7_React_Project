@@ -2,6 +2,7 @@
 // CourseCard.jsx
 import './CourseCard.css';
 
+
 function CourseCard({ title, description, instructor, image, language, rating, price, onEnroll }) {
   return (
   <>
