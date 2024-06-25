@@ -1,4 +1,5 @@
-import  { useState } from 'react';
+// SignUp.jsx
+import { useState } from 'react';
 import axios from 'axios';
 import './SignUp.css'; 
 import { Link, useNavigate } from 'react-router-dom';
@@ -29,10 +30,13 @@ const SignUp = () => {
       });
       console.log(response);
       alert('Signup successful!');
-      navigate('/login');
+      login(); // Log the user in
+      navigate('/enroll'); // Redirect to the enroll page
     } catch (error) {
       console.error('Error:', error);
     }
+
+    navigate('/login');
   };
 
   return (

@@ -1,10 +1,10 @@
 import './Something.css';
-
+import image from "../assets/cat-2.jpg"
 const Something = () => {
   return (
     <div className="main-container">
       <div className="left">
-        <img src="https://uxliner.net/e-school/images/course-4.jpg" alt="Person using laptop" />
+        <img src={image} alt="Person using laptop" />
       </div>
       <div className="right">
         <div className="item">

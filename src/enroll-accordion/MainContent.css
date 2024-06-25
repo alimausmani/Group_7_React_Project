@@ -1,98 +1,87 @@
-/* src/styles.css */
-
-/* 
-.accordion-content {
-  background-color: #1f2428;
-  padding: 20px;
-  flex: 1;
-  overflow-y: auto;
-  font-family: Arial, sans-serif;
-  border: 4px solid blueviolet;
-  width: 80%;
-  position: relative;
-  margin-left: 300px;
-  bottom: 100%;
- 
- 
-} */
-
 .accordions-content {
-  background-color: #ccc;
-  /* padding: 20px; */
-  flex: 1;
+  color: #fff;
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* Adjusting height to fit content */
+.accordions-content {
+  display: inline-block;
+  max-height: 100%; 
   overflow-y: auto;
-  font-family: Arial, sans-serif;
-  /* border: 4px solid blueviolet; */
-  /* width: 300px; */
-  /* margin-left: 300px; */
-  /* position: absolute; Change to absolute */
-  /* margin-left: 300px; */
-  top: 80px; /* Adjust as needed */
+  max-width: 100%; 
 }
 
-
-.title{
-  border: 3px solid red;
-  padding: 20px;
+.sub-step-title {
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 100%; /* Set height to 100% */
+  box-shadow: 0 2px 4px rgba(215, 213, 213, 0.927); /* Adjust shadow values as needed */
 }
 
-
-h2, h3 {
-  color: #ff6f61;
+.title h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.table {
-  display: grid;
-  grid-template-columns: 60px 1fr 100px 100px 100px 50px 100px 60px;
-  grid-gap: 10px;
-  color: #ffffff;
+.sub-step-title {
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(215, 213, 213, 0.927); /* Adjust shadow values as needed */
 }
 
-.table-header {
-  display: contents;
-  font-weight: bold;
-  text-align: center;
+.topics {
+  margin-left: 20px;
 }
 
-.table-row {
-  display: contents;
+.topic {
+  display: flex;
   align-items: center;
-  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
-.table-row input[type="checkbox"] {
-  margin: 0 auto;
+.status {
+  margin-right: 10px;
 }
 
 .article-btn, .youtube-btn, .practice-btn, .note-btn, .revision-btn {
-  background-color: #333;
-  border: none;
-  color: #ffffff;
-  padding: 5px 10px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.article-btn:hover, .youtube-btn:hover, .practice-btn:hover, .note-btn:hover, .revision-btn:hover {
-  background-color: #ff6f61;
+  margin-left: 10px;
 }
 
 .difficulty {
-  text-align: center;
-  padding: 5px;
+  margin-left: auto;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 
 .difficulty.easy {
-  background-color: #4caf50;
+  background-color: green;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.difficulty.medium {
+  background-color: orange;
 }
 
-h3 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.difficulty.hard {
+  background-color: red;
+}
+
+.head {
+  width: 100%;
+  text-align: center; /* Center the title */
+}
+
+.head > h1 {
+  margin: 0 auto;
+}
+
+.topic {
+  width: 100%; /* Ensure topic takes full width */
+}
+
+.sub-step-title {
+  width: 100%; /* Ensure subtitle takes full width */
 }

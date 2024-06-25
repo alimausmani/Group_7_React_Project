@@ -1,95 +1,29 @@
-/* Accordion.css */
-
-
-.app-container {
-  display: flex;
-  flex-direction: row;
-
-}
-.accordion {
-  /* width: 100%; */
-  max-width: 400px; /* Adjust based on your layout */
-  margin: 0 auto;
-}
-
 .accordion-item {
-  border: 1px solid #444;
-  margin: 5px 0;
-  border-radius: 5px;
-  background-color: #333;
-  overflow: hidden; /* Prevent overflow when the content is hidden */
-  transition: max-height 0.3s ease; /* Smooth transition for height change */
-}
-
-
-
-.sidebar {
-  background-color: #161a1d;
-  color: #ffffff;
-  padding: 20px;
-  width: 250px;
-  height: 100%;
-  overflow-y: auto;
-  font-family: Arial, sans-serif;
- 
-}
-
-.sidebar h2 {
-  margin-top: 20px;
   margin-bottom: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  padding: 10px 0;
-}
-
-.sidebar ul li:hover {
-  color: #ff6f61;
-  cursor: pointer;
-}
-
-
-.accordion-title {
-  background: #2b2b2b;
-  color: white;
+.accordion-item .accordion-title {
+  background-color: #333;
   padding: 15px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1em;
 }
 
-.accordion-title:hover {
-  background: #353a40;
+.accordion-item .accordion-title h2 {
+  margin: 0;
+  font-size: 16px;
 }
 
-.accordion-content {
-  background: #1e1e1e;
-  color: blue;
+.accordion-item .accordion-content {
+  background-color: #444;
   padding: 15px;
-  display: none; /* Hidden by default */
-  flex-direction: column; /* Ensure content stacks vertically */
 }
 
-.accordion-item.active .accordion-content {
-  display: block; /* Show content when the accordion is active */
-}
-
-.accordion ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 10px; /* Add space above the list */
-}
-
-.accordion li {
-  padding: 5px 0;
-  color: white;
-  border-left: 2px solid #555; /* Indicate hierarchy */
-  margin-left: 10px; /* Indent to show sub-list hierarchy */
+.accordion-item.active .accordion-title {
+  background-color: #555;
 }

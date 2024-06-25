@@ -1,8 +1,13 @@
-// CourseCard.jsx
 import './CourseCard.css';
+import { useNavigate } from 'react-router-dom';
 
+function CourseCard({ title, description, instructor, image, language, rating, price }) {
+  const navigate = useNavigate();
 
-function CourseCard({ title, description, instructor, image, language, rating, price, onEnroll }) {
+  const handleEnroll = () => {
+    navigate('/layout');  // Navigate to LayoutComponent on enroll button click
+  };
+
   return (
     <div className="course-card">
       <img src={image} alt={title} className="course-image" />
@@ -12,9 +17,10 @@ function CourseCard({ title, description, instructor, image, language, rating, p
       <p><strong>Language:</strong> {language}</p>
       <p><strong>Rating:</strong> {rating}</p>
       <p><strong>Price:</strong> ${price}</p>
-      <button className='bttn' >Enroll</button>
+      <button className='bttn' onClick={handleEnroll}>Enroll</button>
     </div>
   );
 }
 
 export default CourseCard;
+  
