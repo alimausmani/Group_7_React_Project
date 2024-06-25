@@ -11,14 +11,19 @@ function MainContent({ ind }) {
   }, [ind]);
 
   return (
-    <div className="accordions-content">
+    <div className="accordions-content" style={{ width: "100%" }}>
       <div className="title">
         {data && (
           <div className='head'>
             <h1>{data.step_title}</h1>
             {data.sub_steps.map((subStep, inx) => (
-              <div key={inx} onClick={() => setActiveIndex(activeIndex === inx ? -1 : inx)}>
-                <p className="sub-step-title">{subStep.sub_step_title}</p>
+              <div key={inx} className="sub-step">
+                <div className="sub-step-header" onClick={() => setActiveIndex(activeIndex === inx ? -1 : inx)}>
+                  <p className="sub-step-title" style={{ height: "50px", width: "100%" , }}>{subStep.sub_step_title}</p>
+                  <span className="arrow">
+                    {activeIndex === inx ? '▲' : '▼'}
+                  </span>
+                </div>
                 {activeIndex === inx && (
                   <div className="topics">
                     {subStep.topics.map((topic) => (

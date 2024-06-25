@@ -5,7 +5,7 @@ function CourseCard({ title, description, instructor, image, language, rating, p
   const navigate = useNavigate();
 
   const handleEnroll = () => {
-    navigate('/layout');  // Navigate to LayoutComponent on enroll button click
+    navigate('/lay');  // Navigate to LayoutComponent on enroll button click
   };
 
   return (

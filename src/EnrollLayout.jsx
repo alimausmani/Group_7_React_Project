@@ -19,7 +19,7 @@ function AccordionItem({ title, children }) {
   );
 }
 
-const LayoutComponent = () => {
+const EnrollLayout = () => {
   const [strive, setStrive] = useState(0);
 
   return (
@@ -51,4 +51,4 @@ const LayoutComponent = () => {
   );
 };
 
-export default LayoutComponent;
+export default EnrollLayout;

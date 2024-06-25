@@ -10,9 +10,7 @@ import CoursesFilter from './courses/CoursesFilter';
 import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Layout from './assignment_section/layout';
-// import Accordion from './enroll-accordion/Accordion';
-// import MainContent from './enroll-accordion/MainContent';
-import LayoutComponent from './LayoutComponent';
+import EnrollLayout from './EnrollLayout';
 
 const App = () => {
   return (
@@ -24,8 +22,8 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/courses" element={<CoursesFilter />} />
         <Route path="/about" element={<About />} />
-        <Route path='/layout' element={<Layout/>} />
-        <Route path="/layouts" element={<LayoutComponent />} />
+        <Route path="/layout" element={<Layout />} />
+        <Route path="/lay" element={<EnrollLayout />} />
       </Routes>
       <Footer />
     </Router>
