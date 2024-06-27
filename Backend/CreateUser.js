@@ -8,7 +8,7 @@ const User = require('./User');
 const jwtSecret = process.env.JWT_SECRET || "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm";
 
 // Route to create a user
-router.post('/createuser', [
+router.post('/createUser', [
   body('email').isEmail().withMessage('Please enter a valid email address'),
   body('name').isLength({ min: 5 }).withMessage('Name must be at least 5 characters long'),
   body('password').isLength({ min: 5 }).withMessage('Password must be at least 5 characters long')
