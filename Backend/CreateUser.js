@@ -3,10 +3,11 @@ const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require('./UserModal');
+const User = require('./User');
 
 const jwtSecret = process.env.JWT_SECRET || "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm";
 
+// Route to create a user
 router.post('/createuser', [
   body('email').isEmail().withMessage('Please enter a valid email address'),
   body('name').isLength({ min: 5 }).withMessage('Name must be at least 5 characters long'),
@@ -57,6 +58,7 @@ router.post('/createuser', [
   }
 });
 
+// Route to login a user
 router.post('/loginuser', async (req, res) => {
   const { email, password } = req.body;
 
