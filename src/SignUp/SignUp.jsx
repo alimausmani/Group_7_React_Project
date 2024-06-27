@@ -18,7 +18,7 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/createuser', {
+      const response = await axios.post('https://group-7-react-project-7.onrender.com/api/createuser', {
         name: formData.name,
         email: formData.email,
         password: formData.password

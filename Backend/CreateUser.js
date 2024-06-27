@@ -58,6 +58,15 @@ router.post('/createuser', [
 });
 
 
+router.get('/show/details', async(req,res)=>{
+  try {
+    const Data = await User.find()
+    res.status(200).json({Data})
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({messege:"data not found"})
+  }
+})
 
 
 router.post('/loginuser', async (req, res) => {
