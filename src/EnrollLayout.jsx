@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-import "./LayoutComponent.css"
+import "./EnrollLayout.css"
 
 import MainContent from './enroll-accordion/MainContent';
 

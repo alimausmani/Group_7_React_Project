@@ -14,7 +14,8 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost:27017/Gofoodmern", { useNewUrlParser: true, useUnifiedTopology: true })
+
+mongoose.connect("mongodb+srv://rahulgangwar22:Pcs6QGJe8GOObB59@cluster0.sbksrzf.mongodb.net/Gofoodmern?retryWrites=true&w=majority&appName=Cluster0n" , { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("MongoDB connected");
   })
