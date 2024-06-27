@@ -1,12 +1,10 @@
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import './Login.css';
-// import { AuthContext } from '../courses/AuthContext';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 
 function Login() {
-  const [formData, setFormData] = useState({ name: '', password: '' });
-  // const { login } = useContext(AuthContext);
+  const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -19,8 +17,8 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://group-7-react-project-7.onrender.com/api/loginuser', {
-        name: formData.name,
+      const response = await axios.post('http://localhost:3000/api/loginuser', {
+        email: formData.email,
         password: formData.password
       }, {
         headers: {
@@ -42,8 +40,6 @@ function Login() {
       console.error('Error:', error);
       alert('Error logging in. Please try again.');
     }
-
-    login()
   };
 
   return (
@@ -52,7 +48,7 @@ function Login() {
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
-            <input type="email" name="name" required value={formData.name} onChange={handleChange} />
+            <input type="email" name="email" required value={formData.email} onChange={handleChange} />
             <label>Email</label>
           </div>
           <div className="input-box">

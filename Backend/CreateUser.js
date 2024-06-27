@@ -20,7 +20,7 @@ router.post('/createuser', [
 
     const { name, email, password } = req.body;
 
-    let user = await User.findOne({ name });
+    let user = await User.findOne({ email });
     if (user) {
       return res.status(400).json({ errors: [{ msg: "User already exists" }] });
     }
@@ -57,23 +57,11 @@ router.post('/createuser', [
   }
 });
 
-
-router.get('/show/details', async(req,res)=>{
-  try {
-    const Data = await User.find()
-    res.status(200).json({Data})
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({messege:"data not found"})
-  }
-})
-
-
 router.post('/loginuser', async (req, res) => {
-  const { name, password } = req.body;
+  const { email, password } = req.body;
 
   try {
-    let user = await User.findOne({ email: name });
+    let user = await User.findOne({ email });
     if (!user) {
       return res.status(400).json({ success: false, msg: 'Invalid Credentials' });
     }
@@ -103,4 +91,5 @@ router.post('/loginuser', async (req, res) => {
     res.status(500).send('Server Error');
   }
 });
+
 module.exports = router;
