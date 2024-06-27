@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const createUserRouter = require('./createUser');
+const createUser = require('./createUser.js');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -20,7 +20,7 @@ mongoose.connect("mongodb+srv://rahulgangwar22:Pcs6QGJe8GOObB59@cluster0.sbksrzf
   })
   .catch(err => console.error("MongoDB connection error:", err));
 
-app.use('/api', createUserRouter);
+app.use('/api', createUser);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
