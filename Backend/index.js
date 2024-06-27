@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const createUser = require('./createUser');
+const createUser = require('./CreateUser/');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
