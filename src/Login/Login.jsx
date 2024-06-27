@@ -8,29 +8,30 @@ function Login() {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
+    setFormData({
+      ...formData,
       [e.target.name]: e.target.value
-    }));
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/loginuser', {
-        email: formData.email,
-        password: formData.password
-      }, {
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        withCredentials: true
-      });
+      const response = await axios.post(
+        'http://localhost:3000/api/loginuser',
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          withCredentials: true
+        }
+      );
 
       const data = response.data;
       console.log(data);
       if (!data.success) {
-        alert('Enter valid credentials');
+        alert('Invalid credentials');
       } else {
         alert('Login successful!');
         localStorage.setItem('authToken', data.authToken);
@@ -48,19 +49,35 @@ function Login() {
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
-            <input type="email" name="email" required value={formData.email} onChange={handleChange} />
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
             <label>Email</label>
           </div>
           <div className="input-box">
-            <input type="password" name="password" required value={formData.password} onChange={handleChange} />
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
             <label>Password</label>
           </div>
           <div className="forgot-pass">
             <a href="#">Forgot your password?</a>
           </div>
-          <button type="submit" className="btn">Login</button>
+          <button type="submit" className="btn">
+            Login
+          </button>
           <div className="signup-link">
-            <p>Have no account yet? <Link to="/signup">Signup</Link></p>
+            <p>
+              Have no account yet? <Link to="/signup">Signup</Link>
+            </p>
           </div>
         </form>
       </div>

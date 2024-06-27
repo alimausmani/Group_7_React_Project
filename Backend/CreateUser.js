@@ -7,8 +7,7 @@ const User = require('./User');
 
 const jwtSecret = process.env.JWT_SECRET || "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm";
 
-// Route to create a user
-router.post('/createUser', [
+router.post('/createuser', [
   body('email').isEmail().withMessage('Please enter a valid email address'),
   body('name').isLength({ min: 5 }).withMessage('Name must be at least 5 characters long'),
   body('password').isLength({ min: 5 }).withMessage('Password must be at least 5 characters long')
@@ -58,40 +57,5 @@ router.post('/createUser', [
   }
 });
 
-// Route to login a user
-router.post('/loginuser', async (req, res) => {
-  const { email, password } = req.body;
-
-  try {
-    let user = await User.findOne({ email });
-    if (!user) {
-      return res.status(400).json({ success: false, msg: 'Invalid Credentials' });
-    }
-
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      return res.status(400).json({ success: false, msg: 'Invalid Credentials' });
-    }
-
-    const payload = {
-      user: {
-        id: user.id
-      }
-    };
-
-    jwt.sign(
-      payload,
-      jwtSecret,
-      { expiresIn: 3600 },
-      (err, token) => {
-        if (err) throw err;
-        res.json({ success: true, authToken: token });
-      }
-    );
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server Error');
-  }
-});
 
 module.exports = router;
