@@ -1,5 +1,4 @@
 
-
 function TopNav({ title }) {
   return (
     <div className="top-nav">

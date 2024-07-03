@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function AssignmentSubmit({ onSubmit }) {
@@ -12,7 +12,7 @@ function AssignmentSubmit({ onSubmit }) {
       setFolderName(folder);
     }
   };
-  
+
 
   const handleSubmit = (event) => {
     event.preventDefault();

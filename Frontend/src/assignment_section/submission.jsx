@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
 function SubmissionSuccess() {
@@ -8,7 +7,7 @@ function SubmissionSuccess() {
   if (!submission) {
     return <div>No submission data found</div>;
   }
-  
+
 
   return (
     <div className="submission-success">
