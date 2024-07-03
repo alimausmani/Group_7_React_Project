@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css'; 
 import { Link } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="nav-items">
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/courses">Courses</Link></li> {/* Updated link */}
+          <li><Link to="/courses">Courses</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/layout">Assignment</Link></li>
         </ul>
@@ -50,9 +50,9 @@ const Navbar = () => {
         <div className="mobile-nav-items">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/courses">Courses</Link></li> {/* Updated link */}
+            <li><Link to="/courses">Courses</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Reviews</Link></li>
+            <li><Link to="/layout">Assignment</Link></li>
           </ul>
         </div>
         <div className="mobile-nav-button">
