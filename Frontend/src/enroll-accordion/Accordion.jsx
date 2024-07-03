@@ -1,4 +1,4 @@
-import React from 'react';
+
 import AccordionItem from './AccordionItem';
 
 function Accordion({ setStrive }) {

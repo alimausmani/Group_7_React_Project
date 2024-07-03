@@ -10,6 +10,7 @@ const assignments = [
   { id: 5, title: "Dog Walking app user flow design", course: "Interaction Design Course", status: "Running", dueDate: "Oct 20, 2023" },
 ];
 
+
 function AssignmentList({ status }) {
   const filteredAssignments = status ? assignments.filter(assignment => assignment.status === status) : assignments;
   const [submissions, setSubmissions] = useState({});

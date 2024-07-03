@@ -8,6 +8,7 @@ function SubmissionSuccess() {
   if (!submission) {
     return <div>No submission data found</div>;
   }
+  
 
   return (
     <div className="submission-success">

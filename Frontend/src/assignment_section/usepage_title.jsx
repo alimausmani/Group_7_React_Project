@@ -15,6 +15,7 @@ function usePageTitle() {
   } else if (location.pathname.includes('/submission-success')) {
     title = 'Submission Success';
   }
+  
 
   return title;
 }

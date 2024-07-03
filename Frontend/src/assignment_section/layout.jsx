@@ -29,6 +29,7 @@ function Layout() {
   );
 }
 
+
 function AssignmentDetailsWrapper() {
   return (
     <div className="details-wrapper">

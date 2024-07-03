@@ -3,6 +3,7 @@ import './Courses.css';
 import CourseCard from '../courses/CourseCard.jsx';
 import Filter from './Filter.jsx';
 
+
 const coursesData = [
     { title: 'React Basics', description: 'Learn the fundamentals of React.', instructor: 'John Doe', language: 'English', rating: 4.5, price: 100, category: 'Web Development', image: 'https://htmldemo.net/edumall/edumall/assets/images/courses/courses-1.jpg', enrollNow: "https://react.dev/learn" },
     { title: 'Advanced React', description: 'Dive deeper into React.', instructor: 'Jane Smith', language: 'English', rating: 4.7, price: 150, category: 'Web Development', image: 'https://htmldemo.net/edumall/edumall/assets/images/courses/courses-2.jpg', enrollNow: "https://www.advanced-react.com/" },

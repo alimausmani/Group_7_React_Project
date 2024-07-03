@@ -15,6 +15,7 @@ function StriversA2ZContent({ title, children, defaultOpen = false }) {
   );
 }
 
+
 function StriversA2Z() {
   return (
     <div className="strivers-a2z">

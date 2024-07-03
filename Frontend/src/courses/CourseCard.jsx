@@ -8,6 +8,7 @@ function CourseCard({ title, description, instructor, image, language, rating, p
     navigate('/lay');  // Navigate to LayoutComponent on enroll button click
   };
 
+  
   return (
     <div className="course-card">
       <img src={image} alt={title} className="course-image" />

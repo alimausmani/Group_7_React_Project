@@ -12,6 +12,7 @@ function AssignmentSubmit({ onSubmit }) {
       setFolderName(folder);
     }
   };
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();

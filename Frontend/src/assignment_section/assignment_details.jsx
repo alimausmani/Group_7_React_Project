@@ -9,6 +9,7 @@ const assignments = [
   { id: 5, title: "Dog Walking app user flow design", course: "Interaction Design Course", status: "Running", dueDate: "Oct 20, 2023", details: "Detailed description of the assignment" },
 ];
 
+
 function AssignmentDetails() {
   const { id } = useParams();
   const assignment = assignments.find(assignment => assignment.id === parseInt(id));
